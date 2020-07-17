@@ -1,0 +1,341 @@
+/* Colors */
+/* fonts */
+@keyframes righttoleft {
+  0% {
+    transform: translateX(60rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(-10rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes lefttoright {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(8rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1; }
+  70% {
+    width: 80%; }
+  100% {
+    width: 80%;
+    opacity: 1; } }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #552288; } }
+
+/* button hover animation */
+@keyframes hoverover {
+  from {
+    background: linear-gradient(to top, #b224ef 0%, #7579ff 100%); }
+  to {
+    background: linear-gradient(to top, #7579ff 0%, #b224ef 100%); } }
+
+.section-gap-top {
+  margin-top: 12rem; }
+
+.text-align-center {
+  text-align: center; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Just a better practice */ }
+
+/* Making life easier to use rem instead of px */
+html {
+  font-size: 62.5%;
+  /*i.e. 62.5% of 16px = 10px*/ }
+
+body {
+  font-family: "Roboto", cursive;
+  font-weight: 400;
+  /* font-size: 16px; */
+  font-size: 1.6rem;
+  /* i.e., 1.6*10px = 16px */
+  line-height: 1.7;
+  color: #222831;
+  padding: 0;
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1.1rem; }
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem; }
+
+h3 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  letter-spacing: 1.1rem; }
+
+h4 {
+  font: normal small-caps bold 2rem Playfair Display, serif;
+  font-weight: 500;
+  font-size: 6rem;
+  letter-spacing: 0.4rem; }
+
+h5 {
+  font: normal small-caps 2rem Playfair Display, serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem; }
+
+p.para {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem; }
+
+.button, .button:link, .button:visited {
+  text-transform: uppercase; }
+
+.button-primary {
+  padding: 1rem 3rem;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-clip: padding-box;
+  border-radius: 20px 0;
+  transition: all 0.2s ease-out;
+  font-size: 2rem;
+  letter-spacing: 0.5rem; }
+  .button-primary:hover {
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-0.5rem); }
+  .button-primary:active, .button-primary:focus {
+    transform: translateY(-0.2rem); }
+
+.button--secondary {
+  padding: 1rem 1rem;
+  color: white;
+  background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+  background-clip: padding-box;
+  transition: all 0.2s ease-out;
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem; }
+  .button--secondary:hover {
+    color: white;
+    transform: translatex(0.5rem); }
+  .button--secondary:active, .button--secondary:focus {
+    color: white;
+    transform: translateX(0.2rem); }
+
+.custom-shape-divider-top-1593975700 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg); }
+
+.custom-shape-divider-top-1593975700 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg); }
+
+.custom-shape-divider-top-1593975700 .shape-fill {
+  fill: #ffffff; }
+
+.navbar {
+  padding: 1rem 10rem; }
+
+.navbar-brand {
+  padding: 0 1rem 0 1rem; }
+
+.nav-link {
+  padding: 3rem !important;
+  font: normal 400 2rem "Playfair Display", serif;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s; }
+  .nav-link:hover {
+    background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(-1rem); }
+
+.active a {
+  background: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; }
+
+.header__box {
+  position: relative; }
+  .header__box::after {
+    content: "";
+    opacity: 0.5;
+    background-image: url(../../img/imac.png);
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position: 5% 30%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .header__box--text {
+    padding-top: 17rem; }
+  .header__box--img {
+    text-align: center; }
+
+.exclaim {
+  display: inline-block;
+  padding-left: 12rem;
+  font-style: oblique;
+  text-transform: lowercase;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #552288;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em;*/
+  /* Adjust as needed */
+  opacity: 0;
+  animation: typing 5s steps(50, end) forwards running infinite 3s, blink-caret 0.75s step-end infinite; }
+
+.myname {
+  padding-left: 11rem;
+  opacity: 0;
+  animation: righttoleft 1s ease-in-out forwards 1s; }
+
+.profession {
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: lefttoright 2s ease-in-out forwards 2s; }
+
+.fluid-img {
+  width: 500px;
+  height: auto; }
+
+/*
+@media (max-width: 990px) {
+  .header__box--text {
+    text-align: center;
+  }
+}
+*/
+.aboutme--heading {
+  color: #552288; }
+
+.aboutme--left {
+  text-align: center;
+  margin: auto; }
+
+.aboutme--img {
+  max-width: 600px;
+  height: auto; }
+
+@media (max-width: 700px) {
+  .aboutme--img {
+    max-width: 400px; } }
+
+@media (max-width: 990px) {
+  .aboutme--right {
+    text-align: center; }
+  .aboutme--paragraph {
+    margin: 0 auto; } }
+
+.skills {
+  text-align: center;
+  background-color: #222831;
+  position: relative; }
+  .skills--heading {
+    color: white;
+    padding-top: 15rem; }
+  .skills__box {
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap; }
+    .skills__box--skill {
+      width: 33%;
+      padding: 2rem;
+      height: auto;
+      margin: 0 auto; }
+    .skills__box--img {
+      width: 60%;
+      height: auto; }
+    .skills__box--name {
+      color: white; }
+      @media (max-width: 700px) {
+        .skills__box--name {
+          font-size: 1.4rem; } }
+
+@media (max-width: 700px) {
+  .flexbox-even {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start; } }
+
+.education--heading {
+  color: #552288;
+  text-align: center; }
+
+.education--btn {
+  border-style: none;
+  border-radius: 0;
+  padding: 1rem;
+  font-size: 2.4rem;
+  color: #222831;
+  font-family: Playfair Display, serif;
+  transition: all 0.3s ease-out; }
+  .education--btn:hover {
+    color: white;
+    transform: translateX(4px);
+    background-color: #222831; }
+
+.education--body {
+  padding: 2rem 3rem;
+  font-size: 1.8rem; }
+
+.education__box--img {
+  text-align: center; }
+
+.education--img {
+  max-width: 500px;
+  height: auto; }
+
+.card-header {
+  background-color: transparent;
+  border: none; }
+
+.card {
+  border: none;
+  border-radius: 0; }

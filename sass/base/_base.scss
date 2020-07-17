@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Just a better practice */
+}
+
+/* Making life easier to use rem instead of px */
+
+html {
+  font-size: 62.5%; /*i.e. 62.5% of 16px = 10px*/
+}
+
+body {
+  font-family: $default-font;
+  font-weight: 400;
+  /* font-size: 16px; */
+  font-size: $default-font-size; /* i.e., 1.6*10px = 16px */
+  line-height: 1.7;
+  color: $color-primary;
+  padding: 0;
+  box-sizing: border-box;
+}

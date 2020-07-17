@@ -1,0 +1,29 @@
+.aboutme {
+  &--heading {
+    color: $color-secondary;
+  }
+  &--left {
+    text-align: center;
+    margin: auto;
+  }
+  &--img {
+    @include imgfix;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutme--img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 990px) {
+  .aboutme {
+    &--right {
+      text-align: center;
+    }
+    &--paragraph {
+      margin: 0 auto;
+    }
+  }
+}

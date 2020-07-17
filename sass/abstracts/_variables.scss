@@ -1,0 +1,20 @@
+/* Colors */
+
+$color-primary: #222831;
+$color-secondary: #552288;
+$color-teritiary: #014073;
+
+$gradient-1: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+$gradient-1-reverse: linear-gradient(to top, #7579ff 0%, #b224ef 100%);
+$gradient-2: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+$gradient-3: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+$gradient-3-reverse: linear-gradient(120deg, #c2e9fb 0%, #a1c4fd 100%);
+$gradient-4: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+$gradient-5: linear-gradient(60deg, #29323c 0%, #485563 100%);
+$gradient-6: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+$gradient-7: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+/* fonts */
+$default-font: "Roboto", cursive;
+$decorative-font: "Playfair Display", serif;
+$default-font-size: 1.6rem;

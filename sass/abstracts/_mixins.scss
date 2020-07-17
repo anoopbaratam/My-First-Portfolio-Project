@@ -1,0 +1,19 @@
+@mixin abscenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin imgfix {
+  max-width: 600px;
+  height: auto;
+}
+
+.section-gap-top {
+  margin-top: 12rem;
+}
+
+.text-align-center {
+  text-align: center;
+}

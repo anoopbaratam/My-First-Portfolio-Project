@@ -1,0 +1,29 @@
+.navbar {
+  padding: 1rem 10rem;
+}
+
+.navbar-brand {
+  padding: 0 1rem 0 1rem;
+}
+
+.nav-link {
+  padding: 3rem !important;
+  font: normal 400 2rem $decorative-font;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  &:hover {
+    background: $gradient-1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(-1rem);
+  }
+}
+
+.active a {
+  background: $gradient-1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

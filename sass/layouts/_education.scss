@@ -1,0 +1,50 @@
+.education {
+  &--heading {
+    color: $color-secondary;
+    text-align: center;
+  }
+
+  &-btn-heading {
+  }
+
+  &--btn {
+    border-style: none;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 2.4rem;
+    color: $color-primary;
+    font-family: Playfair Display, serif;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: white;
+      transform: translateX(4px);
+      background-color: $color-primary;
+    }
+  }
+
+  &--body {
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+  }
+
+  &__box {
+    &--img {
+      text-align: center;
+    }
+  }
+  &--img {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+.card-header {
+  background-color: transparent;
+  border: none;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}

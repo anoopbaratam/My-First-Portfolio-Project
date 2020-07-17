@@ -1,0 +1,43 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+  }
+  &-primary {
+    padding: 1rem 3rem;
+    background: $gradient-3;
+    background-clip: padding-box;
+    border-radius: 20px 0;
+    transition: all 0.2s ease-out;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    &:hover {
+      color: white;
+      background: $gradient-7;
+      transform: translateY(-0.5rem);
+    }
+    &:active,
+    &:focus {
+      transform: translateY(-0.2rem);
+    }
+  }
+  &--secondary {
+    padding: 1rem 1rem;
+    color: white;
+    background: $gradient-1;
+    background-clip: padding-box;
+    transition: all 0.2s ease-out;
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
+    &:hover {
+      color: white;
+      transform: translatex(0.5rem);
+    }
+    &:active,
+    &:focus {
+      color: white;
+      transform: translateX(0.2rem);
+    }
+  }
+}
